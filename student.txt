@@ -1,0 +1,3 @@
+student name : Max de Lange
+student number : 617407
+student class : INF1Sd
