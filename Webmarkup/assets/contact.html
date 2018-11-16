@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords"
+			content="contact, form, contact us, submit, email, companyname, products, blog,
+			more info">
+		<meta name="author" content="Max de Lange">
+		<meta name="description" content="Contact">
+		<meta name="viewport" content="width=device-width, initial-scaling=1.0">
+		<title>Opdracht WebMarkup door Max de Lange</title>
+
+		<!-- Index.Css aan het HTML-bestand binden.-->
+		<link rel="stylesheet" type="text/css" href="css/contact.css">
+
+		<!--InHolland Icons verkregen via favicon.com-->
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icn/apple-touch-icon-114x114.png" >
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icn/apple-touch-icon-72x72.png" >
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="icn/apple-touch-icon-144x144.png" >
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="icn/apple-touch-icon-60x60.png" >
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="icn/apple-touch-icon-120x120.png" >
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="icn/apple-touch-icon-152x152.png" >
+		<link rel="icon" type="image/png" href="icn/favicon-196x196.png" sizes="196x196" >
+		<link rel="icon" type="image/png" href="icn/favicon-32x32.png" sizes="32x32" >
+		<link rel="icon" type="image/png" href="icn/favicon-16x16.png" sizes="16x16" >
+		<link rel="icon" type="image/png" href="icn/favicon-128.png" sizes="128x128" >
+		<link rel="shortcut icon" href="icn/favicon.ico" type="image/x-icon" >
+		<link rel="icon" href="icn/favicon.ico" type="image/x-icon">
+		<meta name="application-name" content="&nbsp;">
+		<meta name="msapplication-TileColor" content="#FFFFFF" >
+		<meta name="msapplication-TileImage" content="icn/mstile-144x144.png" >
+		<meta name="msapplication-square70x70logo" content="icn/mstile-70x70.png" >
+		<meta name="msapplication-square150x150logo" content="icn/mstile-150x150.png" >
+		<meta name="msapplication-wide310x150logo" content="icn/mstile-310x150.png" >
+		<meta name="msapplication-square310x310logo" content="icn/mstile-310x310.png" >
+	</head>
+	<body>
+		<!-- de navigatiebalk voor mobile -->
+		<nav id="mobile">
+			<p>&#9776;</p>
+		</nav>
+		<!-- navigatiebalk voor tablet -->
+		<nav id="tablet">
+			<ul>
+				<li><a href="product.html" class="product"><p>Products</p></a></li>
+				<li><a href="http://www.blogger.com" class="Blog"><p>Blog</p></a></li>
+				<li><a href="contact.html" class="home"><p>Contact</p></a></li>
+			</ul>
+		</nav>
+		<!--De pagina van een video-achtegrond voorzien.-->
+		<video autoplay muted loop id="VideoBackground">
+			<source src="movie/background.mp4" type="video/mp4">
+		</video>
+		<!--De content naar het midden brengen.-->
+		<section id="center">
+		<!-- Logo van de webpagina toevoegen & aanpassen.-->
+		<a href="index.html" class="urllogo">
+			<header class="LogoBackground">
+				<h1 class="nameCompany">COMPANY NAME</h1>
+			</header>
+		</a>
+		<!--Navigatiebalk aanmaken voor de pagina.-->
+		<nav id="NavigationBar">
+			<ul>
+				<li><a href="product.html" class="product"><p>Products</p></a></li>
+				<li><a href="http://www.blogger.com" class="Blog"><p>Blog</p></a></li>
+				<li><a href="contact.html" class="home"><p>Contact</p></a></li>
+			</ul>
+		</nav>
+		<!-- "contact" balk -->
+		<aside id="contact">  Contact </aside>
+		<!-- het formulier -->
+		<article>
+
+		<p class="information">More information</p>
+		<form action="nowhere.php" method="post" id="form">
+			<fieldset id="selectTopic">
+				<label class="selectTopicLabel">Select topic</label>
+				<select>
+					<option value="general">General inquiries</option>
+					<option value="press">Press relations</option>
+					<option value="recruitement">Recruitement</option>
+				</select>
+			</fieldset>
+			<fieldset class="contactFormFieldset">
+				<input
+					type="text"
+					name="contactFormName"
+					placeholder="Your name.."
+				/>
+			</fieldset>
+			<fieldset class="contactFormFieldset">
+				<input
+					type="email"
+					name="email"
+					placeholder="Your email.."
+				/>
+			</fieldset>
+			<fieldset>
+				<textarea
+					rows="7"
+					cols="40"
+					name="message"
+					placeholder="Write something.."
+				></textarea>
+			</fieldset>
+			<input
+				type="submit"
+				value="Submit"
+			/>
+		</form>
+		</article>
+		<!-- de footer -->
+		<footer>&copy; 2018 - Max de Lange - Inholland </footer>
+		</section>
+	</body>
+</html>

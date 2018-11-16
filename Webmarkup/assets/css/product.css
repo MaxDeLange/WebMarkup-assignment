@@ -1,0 +1,962 @@
+/*Het lettertype baskerville toevoegen.*/
+@font-face
+{
+	font-family: baskerville;
+	src: url("fonts/baskervi.ttf") format("truetype");
+}
+/*DESKTOP PROPERTIES*/
+@media screen and (min-width: 960px)
+{
+	/*De content naar het midden van de pagina verplaatsen.*/
+	#center 
+	{
+		margin: auto;
+		width: 48%;
+		padding: 0;
+		font-family: Arial, "Times New Roman", Serif;
+		background-color: #ffffff;
+	}
+	/*De properties van de video achtergrond aanpassen.*/
+	#VideoBackground
+	{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: auto;
+		z-index: -100;	
+		min-height: 100%;
+		min-width: 100%;	
+		margin: 0 0 -25% 0;
+	}
+	/*Paragraaf stylen*/
+	p
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*Elementen voor mobiel verbergen.*/
+	#mobile, #tablet, .productmobile
+	{
+		position: absolute;
+		visibility: hidden;
+	}
+	/*Afbeelding toevoegen aan de achtergrond.*/
+	body
+	{
+		background-image: url(../img/background.jpeg);
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		z-index: -2;
+		overflow: auto;
+		height: 100%;
+		margin: 0px;
+	}
+	/*Tekst van het logo aanpassen.*/
+	h1.nameCompany
+	{	
+		height: 45px;
+		color: #ffffff;
+		text-shadow:
+			-2px -2px 0 #000,
+			2px -2px 0 #000,
+			-2px 2px 0 #000,
+			2px 2px 0 #000;
+		height: 45px;
+		font-size: 3em;
+		padding: 45px 35px 45px 35px;
+		display: block;
+		letter-spacing: 3px;
+		margin: 0;
+		position: relative;
+		font-family: baskerville;
+		white-space: nowrap;
+		overflow: hidden;
+		text-align: center;
+	}
+	/*Logo toevoegen van "Company Name".*/
+	.LogoBackground
+	{
+		
+		background-image: url(../img/companylogoBG.jpg);
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+	}
+	/*Style van URL aanpassen.*/
+	.urllogo
+	{
+		text-decoration: none;
+		color: #ffffff;
+	}
+	/*Navigatiebalk aanpassen en kleur geven.*/
+	#NavigationBar
+	{
+		/*De navigatiebalk kleur geven.*/
+		background-color: #707070;
+		/*De navigatiebalk zelf aanpassen.*/
+		text-transform: uppercase;
+		padding: 5px 0px 5px 0px;
+		border: 0.1px solid #ffffff;
+		margin-top: 0px;
+		text-align: center;
+	}
+	/*Style van ul aanpassen.*/
+	#NavigationBar > ul 
+	{
+		padding: 0;
+		overflow: hidden;
+		list-style-type: none;
+		margin: 0;
+	}
+	/*De ruimte tussen de li elementen veranderen.*/
+	#NavigationBar li
+	{
+		display: inline-block;
+		margin: 0.1em 0.15em 0em 0.15em;
+	}
+	/*De style van de links aanpassen.*/
+	li a 
+	{
+		color: #FFFFFF;
+		font-size: 1.15em;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+	}
+	/*Links aanpassen.*/
+	li a:link
+	{
+		color: #FFFFFF;
+	}
+	li a:visited
+	{
+		color: #FFFFFF;
+	}
+	li a:hover
+	{
+		color: #000000;
+		text-decoration: underline;
+	}
+	li a:active
+	{
+		color: #800080;
+		background-color: #D3D3D3;
+	}
+	/*De footer naar voorkeur aanpassen.*/
+	footer
+	{
+		background-color: #000000;
+		color: #ffffff;
+		height: 20px;
+		text-align: center;
+		padding: 5px 5px 5px 5px;
+		clear: both;
+		margin: 15px 0 0 0;	
+	}
+	/*Article en span padding op 0 vastzetten.*/
+	article, span
+	{
+		padding: 0;
+	}
+	/*Het centreren van article.*/
+	article
+	{
+		margin: 0 auto;
+		width: 99%;
+		text-align: center;
+	}
+	/*"Product catalog" header aanpassen.*/
+	.productcatalog
+	{
+		padding: 5px 0px 5px 0px;
+		background-color: #2699FB; 
+		color: #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 3em;
+		margin-bottom: 15px;	
+	}
+	/*Product 1 aanpassen.*/
+	.product_1
+	{
+		background-image: url(../img/product1.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 5px 5px 0.5vw;
+		display: inline-block;
+	}
+	/*Product 2 aanpassen.*/
+	.product_2
+	{
+		background-image: url(../img/product2.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: inline-block;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 5px 5px 10px;
+	}
+	/*Product 3 aanpassen.*/
+	.product_3
+	{
+		background-image: url(../img/product3.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: inline-block;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 0 5px 10px;
+	}
+	/*Product 4 aanpassen.*/
+	.product_4
+	{
+		background-image: url(../img/product4.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: inline-block;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 5px 5px 0.5vw;
+	}
+	/*Product 5 aanpassen.*/
+	.product_5
+	{
+		background-image: url(../img/product5.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: inline-block;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 5px 5px 10px;
+	}
+	/*Product 6 aanpassen.*/
+	.product_6
+	{
+		background-image: url(../img/product6.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: inline-block;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 0 5px 10px;
+	}
+	/*Product 7 aanpassen.*/
+	.product_7
+	{
+		background-image: url(../img/product7.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: inline-block;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 5px 5px 0.5vw;
+	}
+	/*Product 8 aanpassen.*/
+	.product_8
+	{
+		background-image: url(../img/product8.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: inline-block;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 5px 5px 10px;
+	}
+	/*Product 9 aanpassen.*/
+	.product_9
+	{
+		background-image: url(../img/product9.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: inline-block;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 0 5px 10px;
+
+	}
+	/*Product 10 aanpassen.*/
+	.product_10
+	{
+		background-image: url(../img/product10.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: inline-block;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 5px 15px 0.5vw;
+
+	}
+	/*Product 11 aanpassen.*/
+	.product_11
+	{
+		background-image: url(../img/product11.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: inline-block;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 5px 15px 10px;
+	}
+	/*Product 12 aanpassen.*/
+	.product_12
+	{
+		background-image: url(../img/product12.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: inline-block;
+		height: 150px;
+		width: 31%;
+		float: left;
+		border: 1px solid #AAAAAA;
+		margin: 5px 0 15px 10px;
+	}
+}
+/*MOBILE PROPERTIES*/
+@media screen and (max-width: 359px)
+{	
+	/*De margin en de padding vastzetten.*/
+	html, body
+	{
+		margin: 0;
+		padding: 0;
+	}
+	body
+	{
+		font-family: Arial, serif;
+	}
+	/*Paragraaf stylen*/
+	p
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*Zorgen dat de video achtergrond niet zichtbaar is.*/
+	#VideoBackground
+	{
+		width: auto;
+		max-height: 1%;
+		max-width: 1%;
+		position: absolute;
+		visibility: hidden;
+		width: auto;
+	}
+	/*Achtergrond logo passend maken.*/
+	.LogoBackground
+	{
+		position: relative;
+		
+		background-image: url(../img/companylogoBG.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 35px;
+		width: 100%;		
+		padding: 25px 5px 5px 5px;
+	}
+	/*Tekst van logo passend maken.*/
+	.nameCompany
+	{
+		color: #ffffff;
+		text-align: center;
+		font-family: baskerville;
+		font-size: 2em;
+		letter-spacing: 2px;
+		top: -35px;
+		position: relative;	
+	}
+	/*URL stylen.*/
+	.urllogo
+	{
+		text-decoration: none;
+		color: #ffffff;
+	}
+	/*Navigatiebalk passend maken en aanpassen.*/
+	#mobile
+	{
+		color: #FFFFFF;
+		font-size: 2.5em;
+		z-index: 555;
+		top: 60px;
+		left: 5px;
+		position: absolute;
+	}
+	/*De links aanpassen.*/
+	li a 
+	{
+		text-align: center;
+		display: block;
+		font-size: 0.9em;
+		text-decoration: none;
+
+	}
+	/*De style van ul aanpassen.*/
+	#NavigationBar > ul 
+	{
+		list-style-type: none;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+	/*De margin en de padding aanpassen.*/
+	#NavigationBar li
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: 5px 10px 5px 10px;
+		float: left;
+	}
+	/*Verbergen van de links.*/
+	.home, .product, .Blog
+	{
+		visibility: hidden;
+	}
+	/*Navigatiebar voor tablet verbergen.*/
+	#tablet
+	{
+		visibility: hidden;
+		position: absolute;
+		z-index: -99999;
+	}
+	/*"Product Catalog" verbergen.*/
+	.productcatalog
+	{
+		position: absolute;
+		visibility: hidden;
+		z-index: -456;
+	}
+	/*De navigatiebar aanpassen voor tablet.*/
+	#NavigationBar 
+	{
+		/*Navigatiebar een kleur en vorm geven.*/
+		background-color: #707070;
+		border: 5px solid #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 5px 0px 5px 0px;
+		margin-top: 0px;
+		width: 100%;
+		position: relative;
+		z-index: 50;
+	}
+	/*Article en Span op 0 vastzetten.*/
+	article, span
+	{
+		padding: 0;
+		margin: 0;
+	}
+	/*De Article in het midden centeren.*/
+	article
+	{
+		width: 95%;
+		margin: 10px 1% 10px auto;
+	}
+	/*"Product" header aanpassen.*/
+	.productmobile
+	{
+		color: #ffffff;
+		background-color: #2699FB; 		
+		font-size: 1.5em;	
+		text-align: center;		
+		letter-spacing: 2px;		
+		text-transform: uppercase;		
+		position: relative;		
+		border: 5px solid #2699fb;	
+		padding: 5px 0px 5px 0px;
+		padding: 10px 0px 10px 0px;		
+		margin: 0px 0px 0px 0px;		
+		width: 100%;		
+		line-height: 15px;		
+		z-index: 66;		
+	}
+	
+	/*Picture 1 aanpassen.*/
+	.picture_1
+	{
+		background-image: url(../img/product1.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: block;	
+		margin: 15px 0 15px 0;		
+		width: 100%;		
+		height: 200px;		
+	}
+	/*Picture 2 aanpassen.*/
+	.picture_2
+	{
+		background-image: url(../img/product2.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: block;	
+		margin: 10px 0 10px 0;		
+		width: 100%;		
+		height: 200px;		
+	}
+	/*Picture 3 aanpassen.*/
+	.picture_3
+	{
+		background-image: url(../img/product3.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: block;
+		margin: 15px 0 15px 0;		
+		width: 100%;		
+		height: 200px;		
+	}
+	/*Picture 4 aanpassen.*/
+	.picture_4
+	{
+		background-image: url(../img/product4.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: block;	
+		margin: 15px 0 15px 0;		
+		width: 100%;		
+		height: 200px;		
+	}
+	/*Picture 5 aanpassen.*/
+	.picture_5
+	{
+		background-image: url(../img/product5.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: block;	
+		margin: 15px 0 15px 0;		
+		width: 100%;		
+		height: 200px;		
+	}
+	/*Picture 6 aanpassen.*/
+	.picture_6
+	{
+		background-image: url(../img/product6.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: block;	
+		margin: 15px 0 15px 0;		
+		width: 100%;		
+		height: 200px;		
+	}
+	/*Picture 7 aanpassen.*/
+	.picture_7
+	{
+		background-image: url(../img/product7.jpg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: cover;
+		display: block;	
+		margin: 15px 0 15px 0;		
+		width: 100%;		
+		height: 200px;		
+	}
+	/*Picture 8 aanpassen.*/
+	.picture_8
+	{
+		background-image: url(../img/product8.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: block;	
+		margin: 15px 0 15px 0;		
+		width: 100%;		
+		height: 200px;		
+	}
+	/*Picture 9 aanpassen.*/
+	.picture_9
+	{
+		background-image: url(../img/product9.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: block;	
+		margin: 15px 0 15px 0;		
+		width: 100%;		
+		height: 200px;		
+	}
+	/*Picture 10 aanpassen.*/
+	.picture_10
+	{
+		background-image: url(../img/product10.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: block;	
+		margin: 15px 0 15px 0;		
+		width: 100%;		
+		height: 200px;		
+	}
+	/*Picture 11 aanpassen.*/
+	.picture_11
+	{
+		background-image: url(../img/product11.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: block;	
+		margin: 15px 0 15px 0;		
+		width: 100%;		
+		height: 200px;
+	}
+	/*Picture 12 aanpassen.*/
+	.picture_12
+	{
+		background-image: url(../img/product13.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: block;	
+		margin: 15px 0 15px 0;		
+		width: 100%;		
+		height: 200px;		
+	}
+	/*De footer aanpassen.*/
+	footer
+	{
+		color: #ffffff;
+		background-color: #000000;
+		padding: 10px 10px 15px 0px;
+		position: relative;
+		text-align: center;
+		height: 20px;
+		width: 100%;
+	}
+}
+/*TABLET PROPERTIES*/
+@media screen and (min-width: 360px) and (max-width: 959px)
+{
+	body, html
+	{
+		padding: 0px;
+		margin: 0px;
+		overflow-x: hidden;
+	}
+	/*Video van de achtergrond verbergen.*/
+	#VideoBackground
+	{
+		height: auto;
+		width: auto;
+		visibility: hidden;
+		max-height: 1%;
+		max-width: 1%;
+		position: absolute;
+	}
+	/*Paragraaf stylen.*/
+	p
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+	/*Lettertype & achtergrondkleur toevoegen.*/
+	body
+	{
+		font-family: Arial, serif;
+		background-color: #FFFFFF;
+	}
+	/*De header aanpassen.*/
+	header
+	{
+		background-image: url(../img/companylogoBG.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding: 25px 0px 25px 0px;
+		height: 65px;
+		width: 100%;
+		position: relative;
+	}
+	/*URL aanpassen.*/
+	.urllogo
+	{
+		color: #ffffff;
+		text-decoration: none;
+	}
+	/*Elementen niet voor tablet bedoelt verbergen.*/
+	#mobile, #NavigationBar, .productcatalog, .productmobile
+	{
+		visibility: hidden;
+		position: absolute;
+	}
+	/* Logo tekst aanpassen */
+	.nameCompany
+	{	
+		font-size: 3.5em;
+		color: #ffffff;
+		text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
+		letter-spacing: 3px;
+		text-align: center;
+		font-family: baskerville;
+		position: relative;
+		top: -40px;
+		font-family: baskerville;
+	}
+	/*De footer aanpassen.*/
+	footer
+	{
+		color: #ffffff;
+		text-align: center;		
+		background-color: #000000;
+		padding: 10px 5px 10px 5px;
+		margin: -20px 0 0 0;
+		position: relative;
+		z-index: 68;	
+		height: 20px;
+	}	clear: both;
+	/*De navigatiebalk aanpassen voor tablet.*/
+	#tablet
+	{
+		background-color: #707070;
+		border: 0.1px solid #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 5px 0px 5px 0px;
+		margin-top: 0px;
+	}
+	/*De style van ul aanpassen.*/
+	#tablet > ul 
+	{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		list-style-type: none;
+	}
+	/*De spacing tussen li wijzigen.*/
+	#tablet li
+	{
+		display: inline-block;
+		margin: 0.1em 0.15em 0em 0.15em;
+	}
+	/*De links aanpassen en passend maken.*/
+	li a 
+	{
+		color: #FFFFFF;
+		text-align: center;
+		display: block;
+		font-size: 1.15em;
+		text-decoration: none;
+	}
+	/*Links aanpassen wat ermee gebeurt bij bepaalde events.*/
+	li a:visited
+	{
+		color: #FFFFFF;
+	}
+	li a:link
+	{
+		color: #FFFFFF;
+	}
+	li a:hover
+	{
+		color: #000000;
+		text-decoration: underline;
+	}
+	li a:active
+	{
+		color: #800080;
+		background-color: #D3D3D3;
+	}
+	/*Article & Span vastzetten op 0.*/
+	article, span
+	{
+		padding: 0;
+		margin: 0;
+	}
+	/*Het Article centreren.*/
+	article
+	{
+		margin: 10px auto 10px auto;
+		width: 95%;
+	}
+	/*Product 1 aanpassen.*/
+	.picture_1
+	{
+		background-image: url(../img/product1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 2.5px 2.5px 0;
+		width: 49%;
+		height: 200px;
+	}
+	/*Product 2 aanpassen.*/
+	.picture_2
+	{
+		background-image: url(../img/product2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 0 2.5px 2.5px;
+		width: 49%;
+		height: 200px;
+	}
+	/*Product 3 aanpassen.*/
+	.picture_3
+	{
+		background-image: url(../img/product3.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 2.5px 2.5px 0;
+		width: 49%;
+		height: 200px;
+	}
+	/*Product 4 aanpassen.*/
+	.picture_4
+	{
+		background-image: url(../img/product1.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 0x 2.5px 2.5px;
+		width: 49%;
+		height: 200px;
+	}
+	/*Product 5 aanpassen.*/
+	.picture_5
+	{
+		background-image: url(../img/product5.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 2.5px 2.5px 0;
+		width: 49%;
+		height: 200px;
+	}
+	/*Product 6 aanpassen.*/
+	.picture_6
+	{
+		background-image: url(../img/product6.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 0 2.5px 2.5px;
+		width: 49%;
+		height: 200px;
+	}
+	/*Product 7 aanpassen.*/
+	.picture_7
+	{
+		background-image: url(../img/product7.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 2.5px 2.5px 0;
+		width: 49%;
+		height: 200px;
+	}
+	/*Product 8 aanpassen.*/
+	.picture_8
+	{
+		background-image: url(../img/product8.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 0 2.5px 2.5px;
+		width: 49%;
+		height: 200px;
+	}
+	/*Product 9 aanpassen.*/
+	.picture_9
+	{
+		background-image: url(../img/product9.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 2.5px 2.5px 0;
+		width: 49%;
+		height: 200px;
+	}
+	/*Product 10 aanpassen.*/
+	.picture_10
+	{
+		background-image: url(../img/product10.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 0 2.5px 2.5px;
+		width: 49%;
+		height: 200px;
+
+	}
+	/*Product 11 aanpassen.*/
+	.picture_11
+	{
+		background-image: url(../img/product11.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 2.5px 2.5px 0;
+		width: 49%;
+		height: 200px;
+	}
+	/*Product 12 aanpassen.*/
+	.picture_12
+	{
+		background-image: url(../img/product12.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+		display: inline-block;
+		margin: 2.5px 0 2.5px 2.5px;
+		width: 49%;
+		height: 200px;
+	}
+}

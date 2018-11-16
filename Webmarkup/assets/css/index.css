@@ -1,0 +1,843 @@
+/*Het lettertype Baskerville toevoegen.*/
+@font-face
+{
+	font-family: baskerville;
+	src: url("../fonts/baskervi.ttf") format("truetype");
+}
+/*DESKTOP PROPERTIES*/
+@media screen and (min-width: 960px)
+{
+	/*De content naar het midden van de pagina verplaatsen.*/
+	#center 
+	{
+		width: 48%;
+		margin: auto;
+		font-family: Arial, "Times New Roman", Serif;
+	}
+	/*Elementen voor mobiel verbergen.*/
+	#mobile, #tablet
+	{
+		position: absolute;
+		visibility: hidden;
+		z-index: -999999;
+	}
+	/*De properties van de video achtergrond aanpassen.*/
+	#VideoBackground
+	{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: auto;
+		z-index: -100;	
+		min-height: 100%;
+		min-width: 100%;	
+		margin: 0 0 -25% 0;
+	}
+	/*Paragraaf style aanpassen.*/
+	p
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*Afbeelding toevoegen aan de achtergrond.*/
+	body
+	{
+		background-image: url(../img/background.jpeg);
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		z-index: -2;
+		overflow: auto;
+		height: 100%;
+		width: 100%;
+		margin: 0px;
+	}
+	/*Tekst van het logo aanpassen.*/
+	h1.nameCompany
+	{	
+		height: 45px;
+		color: #ffffff;
+		text-shadow:
+			-2px -2px 0 #000,
+			2px -2px 0 #000,
+			-2px 2px 0 #000,
+			2px 2px 0 #000;
+		height: 45px;
+		font-size: 3em;
+		padding: 45px 35px 45px 35px;
+		display: block;
+		letter-spacing: 3px;
+		margin: 0;
+		position: relative;
+		font-family: baskerville;
+		white-space: nowrap;
+		overflow: hidden;
+		text-align: center;
+	}
+	/*Logo toevoegen van "Company Name".*/
+	.LogoBackground
+	{
+		
+		background-image: url(../img/companylogoBG.jpg);
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+	}
+	/*Style van URL aanpassen.*/
+	.urllogo
+	{
+		text-decoration: none;
+		color: #ffffff;
+	}
+	/*Navigatiebalk aanpassen en kleur geven.*/
+	#NavigationBar
+	{
+		/*De navigatiebalk kleur geven.*/
+		background-color: #707070;
+		/*De navigatiebalk zelf aanpassen.*/
+		text-transform: uppercase;
+		padding: 5px 0px 5px 0px;
+		border: 0.1px solid #ffffff;
+		margin-top: 0px;
+		text-align: center;
+	}
+	/*Style van ul aanpassen.*/
+	#NavigationBar > ul 
+	{
+		padding: 0;
+		overflow: hidden;
+		list-style-type: none;
+		margin: 0;
+	}
+	/*De ruimte tussen de li elementen veranderen.*/
+	#NavigationBar li
+	{
+		display: inline-block;
+		margin: 0.1em 0.15em 0em 0.15em;
+	}
+	/*De style van de links aanpassen.*/
+	li a 
+	{
+		color: #FFFFFF;
+		font-size: 1.15em;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+	}
+	/*Links aanpassen.*/
+	li a:link
+	{
+		color: #FFFFFF;
+	}
+	li a:visited
+	{
+		color: #FFFFFF;
+	}
+	li a:hover
+	{
+		color: #000000;
+		text-decoration: underline;
+	}
+	li a:active
+	{
+		color: #800080;
+		background-color: #D3D3D3;
+	}	
+	/*De footer naar voorkeur aanpassen.*/
+	footer
+	{
+		color: #ffffff;
+		text-align: center;
+		background-color: #000000;
+		height: 20px;
+		position: relative;
+		padding: 10px 5px 10px 5px;
+		margin: -4px 0 0 0;
+		border-top: 1px solid #ffffff;
+		z-index: 68;	
+	}
+	/*"We are entertainment" header aanpassen.*/
+	.Entertainment
+	{
+		background-color: #2699FB; 
+		text-transform: uppercase;
+		padding: 1px 0px 1px 0px;
+		color: #ffffff;
+		font-size: 1.6em;
+		text-align: center;
+		margin: 0px 0px 0px 0px;
+		letter-spacing: 2px;
+		position: relative;
+		z-index: 1;
+		line-height: 15px;	
+	}
+	/*De Margin en de padding vastzetten.*/
+	.h2
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*"Mobile Games" header aanpassen.*/
+	.MobileGames
+	{
+		background-color: #2699FB; 
+		text-transform: uppercase;
+		padding: 1px 0px 1px 0px;
+		color: #ffffff;
+		font-size: 1.6em;
+		text-align: center;
+		margin: -4px 0px 0px 0px;
+		letter-spacing: 2px;
+		position: relative;
+		z-index: 1;
+		line-height: 15px;	
+		vertical-align: top;
+	}
+	/*"Board Games" header aanpassen.*/
+	.BoardGames
+	{
+		background-color: #2699FB; 
+		text-transform: uppercase;
+		padding: 8px 0px 1px 0px;
+		color: #ffffff;
+		font-size: 1.6em;
+		text-align: center;
+		margin: -4px 0px 0px 0px;
+		letter-spacing: 2px;
+		position: relative;
+		z-index: 66;
+		line-height: 15px;	
+	}
+	/*"Console Games" header aanpassen.*/
+	.ConsoleGames
+	{
+		background-color: #2699FB; 
+		text-transform: uppercase;
+		padding: 1px 0px 1px 0px;
+		color: #ffffff;
+		font-size: 1.6em;
+		text-align: center;
+		margin: -4px 0px 0px 0px;
+		letter-spacing: 2px;
+		position: relative;
+		z-index: 66;
+		line-height: 15px;	
+	}
+	/*Zorgen voor de juiste width bij de afbeeldingen.*/
+	span
+	{
+		padding: 0;
+		margin: 0;
+		
+	}
+	/*Zorgen dat de afbeelding "Luigi, Yoshi & Mario" niet zichtbaar is.*/
+	img.luigi
+	{
+		visibility: hidden;
+		width: 1px;
+		height: 1px;
+		z-index: -8888;
+		position: absolute;
+	}
+	/*Zorgen dat de afbeelding "Mobile Games" niet zichtbaar is.*/
+	img.mobile
+	{
+		visibility: hidden;
+		width: 1px;
+		height: 1px;
+		z-index: -8888;
+		position: absolute;
+	}
+	/*Zorgen dat de afbeelding "Board Games" niet zichtbaar is.*/
+	img.board
+	{
+		visibility: hidden;
+		width: 1px;
+		height: 1px;
+		z-index: -8888;
+		position: absolute;
+	}
+	/*Zorgen dat de afbeelding "Console Games" niet zichtbaar is.*/
+	img.console
+	{
+		visibility: hidden;
+		width: 1px;
+		height: 1px;
+		z-index: -8888;
+		position: absolute;
+	}
+	/*Zorgen dat de afbeelding "Luigi, Yoshi & Mario" zichtbaar is als achtergrond.*/
+	#luigiyoshimario
+	{
+		background-image: url(../img/product3.jpg);
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 300px;
+		display: inline-block;
+		z-index: 1;
+	}
+	/*Zorgen dat de afbeelding "Mobile Games" zichtbaar is als achtergrond.*/
+	#Mobile
+	{
+		background-image: url(../img/product8.jpg);
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 300px;
+		display: inline-block;
+		z-index: 1;
+	}
+	/*Zorgen dat de afbeelding "Board Games" zichtbaar is als achtergrond.*/
+	#Board
+	{
+		background-image: url(../img/product6.jpg);
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 300px;
+		display: inline-block;
+		z-index: 1;
+	}
+	/*Zorgen dat de afbeelding "Console Games" zichtbaar is als achtergrond.*/
+	#ConsoleGames
+	{
+		background-image: url(../img/product9.jpg);
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 300px;
+		display: inline-block;
+		z-index: 1;
+	}
+}
+
+/*MOBILE PROPERTIES*/
+@media screen and (max-width: 359px)
+{	
+	/*De margin en de padding vastzetten.*/
+	html, body
+	{
+		margin: 0;
+		padding: 0;
+	}
+	body
+	{
+		font-family: Arial, serif;
+	}
+	/*Zorgen dat de video achtergrond niet zichtbaar is.*/
+	#VideoBackground
+	{
+		width: auto;
+		max-height: 1%;
+		max-width: 1%;
+		position: absolute;
+		visibility: hidden;
+		width: auto;
+	}
+	/*Achtergrond logo passend maken.*/
+	.LogoBackground
+	{
+		position: relative;
+		
+		background-image: url(../img/companylogoBG.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 35px;
+		width: 100%;		
+		padding: 25px 5px 5px 5px;
+	}
+	/*Tekst van logo passend maken.*/
+	.nameCompany
+	{
+		color: #ffffff;
+		text-align: center;
+		font-family: baskerville;
+		font-size: 2em;
+		letter-spacing: 2px;
+		top: -35px;
+		position: relative;	
+	}
+	/*URL stylen.*/
+	.urllogo
+	{
+		text-decoration: none;
+		color: #ffffff;
+	}
+	/*Navigatiebalk passend maken en aanpassen.*/
+	#mobile
+	{
+		color: #FFFFFF;
+		font-size: 2.5em;
+		z-index: 555;
+		top: 60px;
+		left: 5px;
+		position: absolute;
+	}
+	/*Paragraaf stylen.*/
+	p
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*De links aanpassen.*/
+	li a 
+	{
+		text-align: center;
+		display: block;
+		font-size: 0.9em;
+		text-decoration: none;
+
+	}
+	/*De style van ul aanpassen.*/
+	#NavigationBar > ul 
+	{
+		list-style-type: none;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+	/*De margin en de padding aanpassen.*/
+	#NavigationBar li
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: 5px 10px 5px 10px;
+		float: left;
+	}
+	/*Verbergen van de links.*/
+	.home, .product, .Blog
+	{
+		visibility: hidden;
+	}
+	/*Navigatiebar voor tablet verbergen.*/
+	#tablet
+	{
+		visibility: hidden;
+		position: absolute;
+		z-index: -99999;
+	}
+	/*De navigatiebar aanpassen voor tablet.*/
+	#NavigationBar 
+	{
+		/*Navigatiebar een kleur en vorm geven.*/
+		background-color: #707070;
+		border: 5px solid #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 5px 0px 5px 0px;
+		margin-top: 0px;
+		width: 100%;
+		position: relative;
+		z-index: 50;
+	}
+	/*De footer aanpassen.*/
+	footer
+	{
+		color: #ffffff;
+		background-color: #000000;
+		border-top: 3.5px;
+		border-top-style: solid;
+		border-top-color: #ffffff;
+		padding: 15px 10px 20px 0px;
+		position: relative;
+		text-align: center;
+		height: 20px;
+		width: 100%;
+		z-index: 15;
+	}
+	/*"We are entertainment" header aanpassen.*/
+	.Entertainment
+	{
+		color: #ffffff;
+		background-color: #2699FB; 
+		border: 5px solid #2699fb;
+		margin: 0px 0px 0px 0px;
+		padding: 1px 0px 0px 0px;
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		text-align: center;
+		width: 100%;
+		line-height: 15px;
+		position: relative;
+		z-index: 66;
+	}
+	/*Mobile games, Board Games & Console Games headers verbergen.*/
+	.MobileGames, .BoardGames, .ConsoleGames
+	{
+		position: absolute;
+		visibility: hidden;
+		z-index: -999;
+	}
+	/*De afbeelding van Luigi Yoshi & Mario verbergen.*/
+	img.luigi
+	{
+		visibility: hidden;
+		height: 100%;
+		width: 100%;
+		display: block;
+		top: 40px;
+		padding: 0;
+		overflow: hidden;
+	}
+	/*De afbeelding van Luigi Yoshi & Mario met juiste formaat invoeren.*/
+	#luigiyoshimario
+	{		
+		background-image: url(../img/product3.jpg);
+		background-position: 50% 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin: 0 0 0 2px;
+		height: 125px;
+		width: 100%;
+		border: 3.5px solid #ffffff;
+		display: block;		
+	}
+	/*De afbeelding van Mobile Games verbergen.*/
+	img.mobile
+	{
+		visibility: hidden;
+		height: 100%;
+		width: 100%;
+		display: block;
+		top: 40px;
+		padding: 0;
+		overflow: hidden;
+	}
+	/*De afbeelding van Mobile Games met juiste formaat invoeren.*/
+	#Mobile
+	{
+		background-image: url(../img/product8.jpg);
+		background-position: 50% 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin: 0 0 0 2px;
+		height: 125px;
+		width: 100%;
+		border: 3.5px solid #ffffff;
+		display: block;	
+	}
+	/*De afbeelding van Board Games verbergen.*/
+	img.board
+	{
+		visibility: hidden;
+		height: 100%;
+		width: 100%;
+		display: block;
+		top: 40px;
+		padding: 0;
+		overflow: hidden;
+	}
+	/*De afbeelding van Board Games met juiste formaat invoeren.*/
+	#Board
+	{
+		background-image: url(../img/product6.jpg);
+		background-position: 50% 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin: 0 0 0 2px;
+		height: 125px;
+		width: 100%;
+		border: 3.5px solid #ffffff;
+		display: block;	
+	}
+	/*De afbeelding van Console Games verbergen.*/
+	img.console
+	{
+		visibility: hidden;
+		height: 100%;
+		width: 100%;
+		display: block;
+		top: 40px;
+		padding: 0;
+		overflow: hidden;
+	}
+	/*De afbeelding van Console Games met juiste formaat invoeren.*/
+	#ConsoleGames
+	{
+		background-image: url(../img/product9.jpg);
+		background-position: 50% 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin: 0 0 0 2px;
+		height: 125px;
+		width: 100%;
+		border: 3.5px solid #ffffff;
+		display: block;	
+	}
+	/*Verzorgen dat de afbeelding de juiste breedte hebben.*/
+	span
+	{
+		position: relative;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+/*TABLET PROPERTIES*/
+@media screen and (min-width: 360px) and (max-width: 959px)
+{
+	body, html
+	{
+		padding: 0px;
+		margin: 0px;
+		overflow-x: hidden;
+	}
+	/*Video van de achtergrond verbergen.*/
+	#VideoBackground
+	{
+		height: auto;
+		width: auto;
+		visibility: hidden;
+		max-height: 1%;
+		max-width: 1%;
+		position: absolute;
+	}
+	/*Paragraaf stylen.*/
+	p
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+	/*Elementen alleen voor mobiel bedoelt verbergen.*/
+	#mobile, #NavigationBar
+	{
+		visibility: hidden;
+		z-index: -999999;
+		position: absolute;
+	}
+	/*Lettertypen toeveogen.*/
+	body
+	{
+		font-family: Arial, serif;
+	}
+	/*De style van Company Name aanpassen.*/
+	h1.nameCompany
+	{	
+		font-size: 3.5em;
+		color: #ffffff;
+		text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
+		letter-spacing: 3px;
+		text-align: center;
+		font-family: baskerville;
+		position: relative;
+		padding: 45px 35px 45px 25px;
+		margin: 0;
+		height: 45px;
+		display: block;
+		overflow: hidden;	
+		white-space: nowrap;
+	}
+	/*Logo van achtergrond aanpassen.*/
+	.LogoBackground
+	{
+		
+		background-image: url(../img/companylogoBG.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	/*URL aanpassen.*/
+	.urllogo
+	{
+		color: #ffffff;
+		text-decoration: none;
+	}
+	/*De navigatiebalk aanpassen voor tablet.*/
+	#tablet
+	{
+		background-color: #707070;
+		border: 0.1px solid #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 5px 0px 5px 0px;
+		margin-top: 0px;
+	}
+	/*De style van ul aanpassen.*/
+	#tablet > ul 
+	{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		list-style-type: none;
+	}
+	/*De spacing tussen li wijzigen.*/
+	#tablet li
+	{
+		display: inline-block;
+		margin: 0.1em 0.15em 0em 0.15em;
+	}
+	/*De links aanpassen en passend maken.*/
+	li a 
+	{
+		color: #FFFFFF;
+		text-align: center;
+		display: block;
+		font-size: 1.15em;
+		text-decoration: none;
+	}
+	/*Links aanpassen wat ermee gebeurt bij bepaalde events.*/
+	li a:visited
+	{
+		color: #FFFFFF;
+	}
+	li a:link
+	{
+		color: #FFFFFF;
+	}
+	li a:hover
+	{
+		color: #000000;
+		text-decoration: underline;
+	}
+	li a:active
+	{
+		color: #800080;
+		background-color: #D3D3D3;
+	}	
+	/*De footer aanpassen.*/
+	footer
+	{
+		color: #ffffff;
+		text-align: center;		
+		background-color: #000000;
+		padding: 10px 5px 10px 5px;
+		margin: -20px 0 0 0;
+		position: relative;
+		z-index: 68;	
+		height: 20px;
+	}
+	/*"We are entertainment" header aanpassen.*/
+	.Entertainment
+	{
+		color: #ffffff;	
+		background-color: #2699FB;
+		text-transform: uppercase;
+		font-size: 1.6em;
+		letter-spacing: 2px;
+		text-align: center;
+		margin: 0px 0px 0px 0px;
+		padding: 1px 0px 1px 0px;
+		position: relative;
+		line-height: 15px;
+		z-index: 66;
+	}
+	/*De margin en padding vastzetten.*/
+	.h2
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*"We are entertainment" header verbergen.*/
+	.MobileGames
+	{
+		position: absolute;
+		visibility: hidden;
+		z-index: -888;
+	}
+	/*"Mobile Games" header verbergen.*/
+	.BoardGames
+	{
+		position: absolute;
+		visibility: hidden;
+		z-index: -888;
+	}
+	/*"Console Games" header aanpassen.*/
+	.ConsoleGames
+	{
+		color: #ffffff;	
+		background-color: #2699FB;
+		text-transform: uppercase;
+		font-size: 1.6em;
+		letter-spacing: 2px;
+		text-align: center;
+		margin: 0px 0px 0px 0px;
+		padding: 1px 0px 1px 0px;
+		position: relative;
+		line-height: 15px;
+		z-index: 66;
+	}
+	/*Zorgen dat de afbeeldingen de juiste wijdte hebben.*/
+	span
+	{
+		padding: 0;
+		margin: 0px;
+	}
+	article
+	{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	/*Zorgen dat de afbeelding van "We are entertainment" past.*/
+	img.luigi
+	{		
+		border: 4px solid #ffffff;
+		top: -5px;
+		left: -18.5%;
+		width: 80%;
+		height: 325px;
+		position: relative;
+		padding: 0;
+		display: inline-block;
+		float: left;
+		z-index: 567;
+	}
+	/*Zorgen dat de afbeelding van "Mobile Games" past.*/
+	img.mobile
+	{
+		border: 4px solid #ffffff;
+		top: 290px;
+		right: 0;
+		width: 50%;
+		height: 325px;
+		position: absolute;
+		padding: 0;
+		display: inline-block;
+		float: left;
+		z-index: 567;
+	}
+	/*Zorgen dat de afbeelding van "Board Games" past.*/
+	img.board
+	{
+		border: 4px solid #ffffff;
+		height: 1%;
+		position: absolute;
+		display: block;
+		top: 40px;
+		padding: 0;
+		width: 1%;
+		z-index: -68;	
+
+		border: 4px solid #ffffff;
+		top: 40px;
+		width: 1%;
+		height: 1%;
+		position: absolute;
+		padding: 0;
+		display: block;
+		z-index: -68;
+	}
+	/*Zorgen dat de afbeelding van "Console Games" past.*/
+	img.console
+	{
+		width: 100%;
+		height: 325px;
+		padding: 0;
+
+	}
+}

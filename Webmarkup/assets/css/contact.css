@@ -1,0 +1,791 @@
+/*Het lettertype baskerville toevoegen.*/
+@font-face
+{
+	font-family: baskerville;
+	src: url(../fonts/baskervi.ttf) format("truetype");
+}
+/*DESKTOP PROPERTIES*/
+@media screen and (min-width: 960px)
+{
+	html
+	{
+		height: 100%;
+		overflow: hidden;
+	}
+	/*Achtergrond aanpassen.*/
+	body
+	{
+		background-image: url(../img/background.jpeg);
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		z-index: -2;
+		overflow: auto;
+		height: 100%;
+		width: 100%;
+		margin: 0px;
+	}
+	/*De footer aanpassen.*/
+	footer
+	{
+		color: #ffffff;
+		background-color: #000000;
+		text-align: center;
+		padding: 5px 5px 5px 5px;
+		height: 20px;
+	}
+	/* de content centeren */
+	
+	#center
+	{
+		margin: auto;
+		width: 48%;
+		font-family: Arial, "Times New Roman", Serif;
+	}
+	/*Tekst van het logo aanpassen.*/
+	h1.nameCompany
+	{	
+		height: 45px;
+		color: #ffffff;
+		text-shadow:
+			-2px -2px 0 #000,
+			2px -2px 0 #000,
+			-2px 2px 0 #000,
+			2px 2px 0 #000;
+		height: 45px;
+		font-size: 3em;
+		padding: 45px 35px 45px 35px;
+		display: block;
+		letter-spacing: 3px;
+		margin: 0;
+		position: relative;
+		font-family: baskerville;
+		white-space: nowrap;
+		overflow: hidden;
+		text-align: center;
+	}
+	/*Logo toevoegen van "Company Name".*/
+	.LogoBackground
+	{
+		
+		background-image: url(../img/companylogoBG.jpg);
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+	}
+	/*De properties van de video achtergrond aanpassen.*/
+	#VideoBackground
+	{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin: auto;
+		z-index: -100;	
+		min-height: 100%;
+		min-width: 100%;	
+		margin: 0 0 -25% 0;
+	}
+	/*Style van URL aanpassen en kleur geven.*/
+	.urllogo
+	{
+		text-decoration: none;
+		color: #ffffff;
+	}
+	/*Elementen voor alleen mobiel en tablet verbergen.*/
+	#mobile, #tablet
+	{
+		visibility: hidden;
+		position: absolute;
+	}
+	/*Navigatiebalk aanpassen en kleur geven.*/
+	#NavigationBar
+	{
+		/*De navigatiebalk kleur geven.*/
+		background-color: #707070;
+		/*De navigatiebalk zelf aanpassen.*/
+		text-transform: uppercase;
+		padding: 5px 0px 5px 0px;
+		border: 0.1px solid #ffffff;
+		margin-top: 0px;
+		text-align: center;
+	}
+	/*Style van ul aanpassen.*/
+	#NavigationBar > ul 
+	{
+		padding: 0;
+		overflow: hidden;
+		list-style-type: none;
+		margin: 0;
+	}
+	/*De ruimte tussen de li elementen veranderen.*/
+	#NavigationBar li
+	{
+		display: inline-block;
+		margin: 0.1em 0.15em 0em 0.15em;
+	}
+	/*De style van de links aanpassen.*/
+	li a 
+	{
+		color: #FFFFFF;
+		font-size: 1.15em;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+	}
+	/*Links aanpassen.*/
+	li a:link
+	{
+		color: #FFFFFF;
+	}
+	li a:visited
+	{
+		color: #FFFFFF;
+	}
+	li a:hover
+	{
+		color: #000000;
+		text-decoration: underline;
+	}
+	li a:active
+	{
+		color: #800080;
+		background-color: #D3D3D3;
+	}	
+		color: #800080;
+		background-color: #D3D3D3;
+	}
+	/*"Contact" header aanpassen.*/
+	#contact
+	{
+		color: #ffffff;
+		background-color: #2699FB;
+		padding: 5px 0px 5px 0px;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2.9em;
+	}
+	/*Het form stylen.*/
+	#form
+	{
+		background-color: #F5F5F5;
+		padding: 15px 0px 35px 0px;
+		border: 0.5px solid #808080;
+	}
+	/*"Select Topic" aanpassen.*/
+	#selectTopic
+	{
+		background-color: #ffffff;
+		font-size: 1.1em;
+		text-align: left;
+		border: 1.2px solid #707070;
+		margin: 0px auto 7px auto;
+		padding: 5px 5px 5px 5px;
+		width: 88.3%;
+		box-sizing: border-box;
+		flex-wrap: nowrap;
+	}
+	/*Style van "Select Topic" aanpassen.*/
+	.selectTopicLabel
+	{
+		color: #AAAAAA;
+		top: 5px;
+		left: 1px;
+		padding: 0px 0px 0px 0px;
+		position: relative;
+		border: none;	
+	}
+	/*Style van "Select Topic" veld aanpassen.*/
+	#selectTopic select
+	{
+		color: #444444;
+		border: 1.2px solid #AAAAAA;
+		margin: 1px auto 1px auto;
+		padding: 3px 0px 3px 0px;
+		position: static;
+		width: 60%;
+		float: right;
+	}
+	/*Het vak aanpassen.*/
+	option
+	{
+		width: 60%;
+	}
+	/*De input fields aanpassen.*/
+	input[type=text], input[type=email], textarea
+	{
+		color: #AAAAAA;
+		font-size: 1em;
+		text-align: left;
+		font-family: Arial;
+		border: 1.2px solid #707070;
+		margin: 1px auto 0px auto;
+		padding: 10px 5px 10px 5px;
+		width: 90%;
+		display: block;
+		left: 20px;
+	}
+	/*De scrollbar voor Internet Explorer blokkeren.*/
+	textarea
+	{
+		overflow: hidden;
+	}
+	/*De "Submit" button aanpassen en stylen.*/
+	#form input[type=submit]
+	{
+		color: white;
+		background-color: #2699FB;
+		border: 0.5px #808080;
+		font-size: 1.2em;
+		text-align: center;
+		margin: 2.5px auto 0px auto;
+		padding: 5px 5px 5px 5px;
+		box-sizing: border-box;
+		position: static;
+		display: block;
+		width: 88%;
+		cursor: pointer;
+	}
+	/*De borders van fieldset blokkeren.*/
+	fieldset
+	{
+		border: none;
+	}
+	/*De invoertekst style aanpassen.*/
+	input::placeholder, textarea::placeholder
+	{
+		color: #AAAAAA;
+		text-indent: 3px;
+		font-family: Arial;
+	}
+	/*Het groter en kleiner maken van de velden blokkeren.*/
+	textarea
+	{
+		height: 80px;
+		resize: none;
+	}
+	/*De tekst "More Information" aanpassen.*/
+	.information
+	{
+		color: #707070;
+		font-size: 1.3em;
+		margin-bottom: 10px 0 10px 0;
+		text-indent: 20px;
+		z-index: 2;
+		float: left;
+	}
+	/*Paragraaf stylen.*/
+	ul p
+	{
+		padding: 0;
+		margin: 0;
+
+	}
+}
+
+
+/*MOBILE PROPERTIES*/
+@media screen and (max-width: 359px)
+{
+	/*De margin en de padding vastzetten.*/
+	html, body
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*Paragraaf stylen*/
+	p
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*Achtegrond instellen en het lettertype.*/
+	body
+	{
+		background-color: #F5F5F5;
+		font-family: Arial, serif;
+	}
+	/*Achtergrond logo passend maken.*/
+	header
+	{
+		position: relative;
+		background-image: url(../img/companylogoBG.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 35px;
+		width: 110%;		
+		padding: 25px 5px 5px 5px;
+	}
+	/*Achtergrond logo passend maken.*/
+	.LogoBackground
+	{
+		position: relative;
+		
+		background-image: url(../img/companylogoBG.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 35px;
+		width: 100%;		
+		padding: 25px 5px 5px 5px;
+	}
+	/*Tekst van logo passend maken.*/
+	.nameCompany
+	{
+		color: #ffffff;
+		text-align: center;
+		font-family: baskerville;
+		font-size: 2em;
+		letter-spacing: 2px;
+		top: -35px;
+		position: relative;	
+	}
+	/*URL stylen.*/
+	.urllogo
+	{
+		text-decoration: none;
+		color: #ffffff;
+	}
+	/*De links aanpassen.*/
+	li a 
+	{
+		text-align: center;
+		display: block;
+		font-size: 0.9em;
+		text-decoration: none;
+
+	}
+	/*De style van ul aanpassen.*/
+	#NavigationBar > ul 
+	{
+		list-style-type: none;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+	/*De margin en de padding aanpassen.*/
+	#NavigationBar li
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+		margin: 5px 10px 5px 10px;
+		float: left;
+	}
+	/*Verbergen van de links.*/
+	.home, .product, .Blog
+	{
+		visibility: hidden;
+	}
+	/*Zorgen dat de video achtergrond niet zichtbaar is.*/
+	#VideoBackground
+	{
+		width: auto;
+		max-height: 1%;
+		max-width: 1%;
+		position: absolute;
+		visibility: hidden;
+		width: auto;
+	}
+	/*Navigatiebalk voor tablet verbergen.*/
+	#tablet
+	{
+		visibility: hidden;
+		position: absolute;
+		z-index: -99999;
+	}
+	/*De navigatiebar aanpassen voor tablet.*/
+	#NavigationBar 
+	{
+		/*Navigatiebar een kleur en vorm geven.*/
+		background-color: #707070;
+		border: 5px solid #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 5px 0px 5px 0px;
+		margin-top: 0px;
+		width: 110%;
+		position: relative;
+		z-index: 50;
+	}
+	/*"More Information" header verbergen.*/
+	.information
+	{
+		visibility: hidden;
+		padding: 0;
+		margin: 0;
+	}
+	p
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*De footer aanpassen.*/
+	footer
+	{
+		color: #ffffff;
+		background-color: #000000;
+		padding: 10px 10px 15px 0px;
+		position: relative;
+		text-align: center;
+		height: 20px;
+		width: 110%;
+	}
+	/* lettertype instellen als Arial */
+	.lettertype
+	{
+		font-family: Arial, "Times New Roman", Serif;
+	}
+	/*De top van het form aanpassen.*/
+	#contact
+	{
+		color: #ffffff;
+		background-color: #2699FB;
+		text-align: center;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		position: relative;
+		padding: 10px 5px 10px 5px;
+		top: 0;
+		width: 110%;
+		margin-bottom: 15px;
+		left: -1px;
+		z-index: 2;
+	}
+	/*De borders van de fields blokkeren.*/
+	fieldset
+	{
+		border: none;
+	}
+	/*"Submit" button aanpassen.*/
+	#form input[type=submit]
+	{
+		color: white;
+		background-color: #2699FB;
+		font-size: 1em;
+		text-align: center;
+		padding: 5px 5px 5px 5px;
+		border: 0.5px #808080;
+		box-sizing: border-box;
+		margin: 2.5px auto 10px 23px;
+		width: 89%;
+		cursor: pointer;
+		position: static;
+		display: block;
+	}
+	/*Geselcteerde veld style aanpassen.*/
+	#selectTopic
+	{
+		background-color: #ffffff;
+		border: 1.2px solid #707070;
+		font-size: 1em;
+		text-align: left;
+		box-sizing: border-box;
+		margin: 0px auto 7px 25px;
+		padding: 5px 5px 5px 5px;
+		position: relative;
+		width: 88.5%;
+		flex-wrap: nowrap;
+	}
+	.selectTopicLabel
+	{
+		color: #AAAAAA;
+		font-size: 0.9em;
+		border: none;
+		padding: 0px 0px 0px 0px;
+		position: relative;
+		left: 1px;
+	}
+	#selectTopic select
+	{
+		color: #444444;
+		border: 1.2px solid #707070;
+		padding: 3px 35% 3px 0px;
+		margin: 8px 6px 1px 2px;
+		position: static;
+		width: 99%;
+	}
+	option
+	{
+		width: 90%;
+	}
+	/*Style van input fields aanpassen.*/
+	input[type=text], input[type=email], textarea
+	{
+		color: #AAAAAA;
+		font-size: 0.9em;
+		font-family: Arial;
+		text-align: left;
+		border: 1.2px solid #707070;
+		margin: 1px 10px 1px 10px;
+		padding: 5px 5px 5px 5px;
+		display: block;
+		width: 93%;
+		left: 90px;
+	}
+	/*Placeholder tekst aanpassen.*/
+	input::placeholder, textarea::placeholder
+	{
+		color: #AAAAAA;
+		text-indent: 3px;
+		font-family: Arial;
+
+	}
+	form
+	{
+		margin: 0px auto 0px 23px;
+	}
+	/*Het schalen van de velden blokkeren.*/
+	textarea
+	{
+		resize: none;
+		height: 40px;
+	}
+}
+
+/*TABLET PROPERTIES*/
+@media screen and (min-width: 360px) and (max-width: 959px)
+{
+	html, body
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*Paragraaf stylen*/
+	p
+	{
+		margin: 0;
+		padding: 0;
+	}
+	/*Achtegrond & lettertype aanpassen.*/
+	body
+	{
+		font-family: Arial, serif;
+		background-color: #F5F5F5;
+	}
+	/*Header aanpassen voor tablet.*/
+	header
+	{
+		background-image: url(../img/companylogoBG.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 65px;
+		width: 100%;
+		position: relative;
+		padding: 25px 0px 25px 0px;
+	}
+	/*URL aanpassen.*/
+	.urllogo
+	{
+		color: #ffffff;
+		text-decoration: none;
+	}
+	/*Elementen alleen bij Mobiel en Tablet verbergen.*/
+	#mobile, #NavigationBar
+	{
+		visibility: hidden;
+		position: absolute;
+	}
+	/*"More information" en de contact header verbergen.*/
+	#contact, .information
+	{
+		visibility: hidden;
+	}
+	/*Video van de achtergrond verbergen.*/
+	#VideoBackground
+	{
+		height: auto;
+		width: auto;
+		visibility: hidden;
+		max-height: 1%;
+		max-width: 1%;
+		position: absolute;
+	}
+	/*De style van Company Name aanpassen.*/
+	h1.nameCompany
+	{	
+		font-size: 3.5em;
+		color: #ffffff;
+		text-shadow:
+			-1px -1px 0 #000,
+			1px -1px 0 #000,
+			-1px 1px 0 #000,
+			1px 1px 0 #000;
+		letter-spacing: 3px;
+		text-align: center;
+		font-family: baskerville;
+		position: relative;
+		top: -40px;
+	}
+	/* footer aanpassen */
+	footer
+	{
+		background-color: #000000;
+		color: #ffffff;
+		height: 20px;
+		text-align: center;
+		width: 100%;
+		position: relative;
+		padding: 15px 0px 15px 0px;
+		font-size: 1.3em;
+		margin: 0;
+	}
+	/*De footer aanpassen.*/
+	footer
+	{
+		color: #ffffff;
+		text-align: center;		
+		background-color: #000000;
+		padding: 15px 0px 15px 0px;
+		position: relative;	
+		height: 20px;
+		width: 100%;
+		font-size: 1.3em;
+		margin: 0;
+	}
+	/*De navigatiebalk aanpassen voor tablet.*/
+	#tablet
+	{
+		background-color: #707070;
+		border: 0.1px solid #ffffff;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 5px 0px 5px 0px;
+		margin-top: 0px;
+	}
+	/*De style van ul aanpassen.*/
+	#tablet > ul 
+	{
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		list-style-type: none;
+	}
+	/*De spacing tussen li wijzigen.*/
+	#tablet li
+	{
+		display: inline-block;
+		margin: 0.1em 0.15em 0em 0.15em;
+	}
+	/*De links aanpassen en passend maken.*/
+	li a 
+	{
+		color: #FFFFFF;
+		text-align: center;
+		display: block;
+		font-size: 1.15em;
+		text-decoration: none;
+	}
+	/*Links aanpassen wat ermee gebeurt bij bepaalde events.*/
+	li a:visited
+	{
+		color: #FFFFFF;
+	}
+	li a:link
+	{
+		color: #FFFFFF;
+	}
+	li a:hover
+	{
+		color: #000000;
+		text-decoration: underline;
+	}
+	li a:active
+	{
+		color: #800080;
+		background-color: #D3D3D3;
+	}
+	/*De borders van fields verwijderen.*/
+	fieldset
+	{
+		border: none;
+	}
+	/*"Submit" button aanpassen.*/
+	#form input[type=submit]
+	{
+		color: white;
+		background-color: #2699FB;
+		text-align: center;
+		position: static;
+		cursor: pointer;		
+		font-size: 1.6em;
+		box-sizing: border-box;
+		border: 1px #808080;
+		margin: 2.5px 10% 10px auto;
+		padding: 10px 5px 10px 5px;
+		width: 84%;
+		display: block;
+	}
+	/*"Select Topic" aanpassen.*/
+	#selectTopic
+	{
+		background-color: #ffffff;
+		text-align: left;
+		font-size: 1.3em;
+		border: 1.2px solid #707070;
+		margin: 5px 10% 7px auto;
+		padding: 5px 5px 5px 5px;
+		width: 84%;
+		box-sizing: border-box;
+		position: relative;
+		flex-wrap: nowrap;
+	}
+	.selectTopicLabel
+	{
+		color: #AAAAAA;
+		font-size: 1em;
+		left: 1px;
+		position: relative;
+		padding: 0px 0px 0px 0px;
+		margin: 0 0 0 5px;
+		border: none;
+	}
+	#selectTopic select
+	{
+		color: #444444;
+		font-size: 0.9em;
+		border: 1.2px solid #707070;
+		margin: 15px 4px 10px 5px;
+		padding: 3px 35% 3px 0px;
+		width: 98%;
+		position: static;
+	}
+	option
+	{
+		width: 90%;
+	}
+	/*Input fields aanpassen.*/
+	input[type=text], input[type=email], textarea
+	{		
+		color: #AAAAAA;
+		font-size: 1.3em;
+		font-family: Arial;
+		text-align: left;
+		border: 1.2px solid #707070;
+		padding: 5px 5px 5px 5px;
+		margin: 1px 8% 1px auto;
+		width: 86%;
+		display: block;
+	}
+	/*Placeholders aanpassen.*/
+	input::placeholder, textarea::placeholder
+	{
+		color: #AAAAAA;
+		text-indent: 10px;
+		font-family: Arial;
+	}
+	form
+	{
+		margin: 0px auto 0px 23px;
+	}
+	/*Groter en kleiner maken van velden blokkeren.*/
+	textarea
+	{
+		resize: none;
+		height: 120px;
+	}
+}
