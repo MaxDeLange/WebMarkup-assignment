@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /inholland
+
+Sitemap: https://github.com/MaxDeLange/WebMarkup-assignment/blob/master/Webmarkup/assets/20181116160301-sitemap.xml
